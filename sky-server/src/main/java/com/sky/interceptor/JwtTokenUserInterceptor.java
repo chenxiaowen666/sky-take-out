@@ -7,7 +7,8 @@ import com.sky.utils.JwtUtil;
 import io.jsonwebtoken.Claims;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.messaging.handler.HandlerMethod;
+//import org.springframework.messaging.handler.HandlerMethod; 这个包是导致：异常信息：Column 'user_id' cannot be null的原因
+import org.springframework.web.method.HandlerMethod;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 
