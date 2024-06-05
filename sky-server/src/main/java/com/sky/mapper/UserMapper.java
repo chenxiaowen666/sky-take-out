@@ -19,4 +19,7 @@ public interface UserMapper {
      * @param user
      */
     void insert(User user);
+
+    @Select("select * from dish where id = #{id}")
+    User getById(Long id);
 }
